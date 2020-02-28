@@ -1,0 +1,162 @@
+nav{margin-top:0px; text-align: right; background: linear-gradient(to bottom, #000 0%,#000 0%,#000 100%);}
+nav ul{margin: 0; padding: 0; }
+nav ul li{display: inline;margin-left: 0px;list-style: none;}
+nav ul li a {text-decoration: none;font-size: 10pt;padding: 3px;color:#fff;font-family: Arial;}
+
+
+  #grid_header {
+  -webkit-box-sizing: border-box;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  display: inline-block;
+  /* padding: 10px;/*se centra el Display-inblock*/
+
+
+    margin-left:10px;
+    margin-right:10px;
+    border-radius:2px; 
+   
+    text-align: left;
+    width:100%;
+
+  }
+
+  #grid_header article{
+
+  color: black;
+  background: white;
+  display: block; /*desplegar en linea para la derecha*/
+  float: left;
+    width: auto;
+
+  }
+  #grid_header article.imagen_logo{
+    
+    width: 60%;
+    height: 15%;
+  }
+
+  #grid_header article.header_nombre{
+   font-size: 14px;
+   font-family: Arial;
+
+    width: 30%;
+    padding: 20px 10px 0  0 ;
+
+    text-align: right;
+
+  }
+    #grid_header article.header_perfil{
+
+    padding: 5px 0px 0  0 ;
+    width: 29%;
+    text-align: right;
+
+  }
+  #grid_header article.header_news{
+    color: #a30f0f;
+      font-size: 14px;
+      font-weight:bold;
+     padding: 20px 0 0 0 ;
+     width: 8%;
+  }
+  #grid_header article a img{
+    padding: 0px 8px 0  10px;
+  }
+  #grid_header article a{
+    text-decoration: none;
+  }
+
+  #grid_header article.header_news a:hover img{
+      -webkit-transform:scale(1.2);
+      -moz-transform:scale(1.2);
+  }
+
+
+
+
+#rolling-nav {
+  font:normal 12px 'Trebuchet MS',Trebuchet,Arial,Sans-Serif;
+  color:white;
+  text-transform:uppercase;
+	/* outline:1px solid; */
+	width:94%; /* Fixed width. Measure it manually */
+	margin:0px auto;
+ 
+
+}
+
+
+#rolling-nav ul {
+  height:35px;
+  margin:0px 0px;
+  padding:0px 0px;
+  overflow:hidden;
+background-color:#004c99;
+  background-image:-webkit-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-moz-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-ms-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-o-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  -webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  -moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  position:relative;
+}
+
+#rolling-nav li {
+  float:left;
+  display:inline;
+  list-style:none;
+  margin:0px 0px;
+  padding:0px 0px;
+  
+}
+
+#rolling-nav a,
+#rolling-nav a:before {
+  display:block;
+  margin:0px 0px;
+  padding:0px 28.374px;
+  line-height:35px;
+  color:white;
+  text-decoration:none;
+  background-color:#900;
+  background-image:-webkit-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-moz-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-ms-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:-o-linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  background-image:linear-gradient(top, #004c99 0%, #081a6a 50%, #033962 50%, #08266a 100%);
+  -webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  -moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  position:relative;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+#rolling-nav a:before {
+  content:attr(data-clone);
+  position:absolute;
+  top:100%;
+  right:0px;
+  left:0px;
+  display:block;
+  background-color:white;
+  background-image:-webkit-linear-gradient(top, #ddd, white);
+  background-image:-moz-linear-gradient(top, #ddd, white);
+  background-image:-ms-linear-gradient(top, #ddd, white);
+  background-image:-o-linear-gradient(top, #ddd, white);
+  background-image:linear-gradient(top, #ddd, white);
+  border-top:2px solid rgba(0,0,0,0.2);
+  color:#333;
+}
+
+#rolling-nav a:hover {
+  margin-top:-35px;
+  margin-bottom:1px;
+}
+

@@ -1,0 +1,2 @@
+UPDATE `mogel`.`pantalla` SET `pantalla_nombre` = 'ORDENES DE LABORATORIO - COMPRAS' WHERE `pantalla`.`pantalla_id` = 47;
+UPDATE `mogel`.`pantalla` SET `pantalla_nombre` = 'PEDIDOS PRODUCCIÓN' WHERE `pantalla`.`pantalla_id` = 44;

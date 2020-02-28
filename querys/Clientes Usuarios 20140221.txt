@@ -1,0 +1,12 @@
+
+CREATE TABLE IF NOT EXISTS `clientes-usuarios` (
+  `id_cliente_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `id_cliente` bigint(20) NOT NULL,
+  `id_usuario` bigint(20) NOT NULL,
+  PRIMARY KEY (`id_cliente_usuario`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Relacion Clientes - Usuarios de Ventas' AUTO_INCREMENT=1 ;
+
+
+
+
+ALTER TABLE `clientes-usuarios` CHANGE `id_cliente` `id_cliente` VARCHAR( 20 ) NOT NULL ;

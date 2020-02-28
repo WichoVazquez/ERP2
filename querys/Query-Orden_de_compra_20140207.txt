@@ -1,0 +1,11 @@
+ALTER TABLE `detalle_compra` DROP FOREIGN KEY `detalle_compra_ibfk_2` ;
+ALTER TABLE `detalle_compra` CHANGE `almacen_material_id` `almacen_id` BIGINT( 20 ) NOT NULL ;
+
+ALTER TABLE `detalle_compra` ADD FOREIGN KEY ( `almacen_id` ) REFERENCES `promex`.`almacen` (
+`almacen_id`
+) ON DELETE RESTRICT ON UPDATE RESTRICT ;
+
+ALTER TABLE `detalle_compra` ADD `costo` DOUBLE NULL COMMENT 'Costo que viene en factura';
+
+ALTER TABLE `orden_compra` ADD `factura_provedor` VARCHAR( 50 ) NULL COMMENT 'No. Factura Proveedor';
+ALTER TABLE `orden_compra` ADD `usuario_id_almacen` VARCHAR( 20 ) NULL COMMENT 'Usuario del almacen';

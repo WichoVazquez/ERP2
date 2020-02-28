@@ -1,0 +1,3 @@
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'ENTRADAS DE ALMACÉN' WHERE `pantalla`.`pantalla_id` =36;
+
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'SALIDAS DE ALMACÉN' WHERE `pantalla`.`pantalla_id` =42;

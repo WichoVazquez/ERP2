@@ -1,0 +1,22 @@
+ALTER TABLE `pedido` CHANGE `contrato_id` `contrato_id` BIGINT( 20 ) NULL DEFAULT NULL ;
+ALTER TABLE `pedido` CHANGE `contrato_id` `contrato_id` BIGINT( 10 ) NULL DEFAULT NULL ;
+
+
+
+ALTER TABLE `partida` DROP FOREIGN KEY `partida_ibfk_1` ;
+
+ALTER TABLE `contrato` CHANGE `contrato_id` `contrato_id` BIGINT( 10 ) NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `partida` CHANGE `contrato_id` `contrato_id` BIGINT( 10 ) NOT NULL ;
+
+
+ALTER TABLE `partida` ADD FOREIGN KEY ( `contrato_id` ) REFERENCES `promex`.`contrato` (
+`contrato_id`
+) ON DELETE RESTRICT ON UPDATE RESTRICT ;
+
+
+ALTER TABLE `partida` ADD FOREIGN KEY ( `contrato_id` ) REFERENCES `promex`.`contrato` (
+`contrato_id`
+) ON DELETE RESTRICT ON UPDATE RESTRICT ;
+
+ALTER TABLE `contrato` ADD `contrato_descripcion` VARCHAR( 200 ) NULL AFTER `cliente_id` ;

@@ -1,0 +1,1 @@
+UPDATE `mogel`.`pantalla` SET `pantalla_nombre` = 'LABORATORIO' WHERE `pantalla`.`pantalla_id` = 10;

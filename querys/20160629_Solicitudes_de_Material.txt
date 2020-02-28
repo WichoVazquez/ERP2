@@ -1,0 +1,6 @@
+INSERT INTO `global`.`PANTALLA` (`pantalla_id`, `no_menu_orden`, `pantalla_nombre`, `pantalla_descripcion`, `id_pantalla_padre`, `pantalla_url`, `nombre_imagen`) VALUES (NULL, '2', 'SOLICITUD DE MATERIAL', 'Módulo de solicitudes de material de taller', '9', 'taller_solicitud_material.php', 'pantalla');
+
+ALTER TABLE `DETALLE_TALLER_SOLICITUD` ADD `cantidad_surtida` INT NULL ;
+
+ALTER TABLE `TALLER SOLICITUD` CHANGE `usuario_id_solicitante` `usuario_id_solicitante` VARCHAR(20) NOT NULL;
+

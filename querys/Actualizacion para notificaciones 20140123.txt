@@ -1,0 +1,5 @@
+UPDATE `promex`.`almacen_material` SET `minimo` = '30' WHERE `almacen_material`.`almacen_material_id` =15;
+
+UPDATE `promex`.`almacen_material` SET `cantidad_actual` = '0' WHERE `almacen_material`.`almacen_material_id` =17;
+
+UPDATE `promex`.`almacen_material` SET `cantidad_actual` = '0' WHERE `almacen_material`.`almacen_material_id` =16;

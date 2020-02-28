@@ -1,0 +1,27 @@
+INSERT INTO `promex`.`pantalla` (
+`pantalla_id` ,
+`no_menu_orden` ,
+`pantalla_nombre` ,
+`pantalla_descripcion` ,
+`id_pantalla_padre` ,
+`pantalla_url` ,
+`nombre_imagen`
+)
+VALUES (
+NULL , '5', 'REPORTES', 'Reportes de Ventas', '5', 'REPORTES_VENTAS.php', 'noticias'
+);
+
+INSERT INTO `promex`.`pantalla` (
+`pantalla_id` ,
+`no_menu_orden` ,
+`pantalla_nombre` ,
+`pantalla_descripcion` ,
+`id_pantalla_padre` ,
+`pantalla_url` ,
+`nombre_imagen`
+)
+VALUES (
+NULL , '2', 'COMPARATIVO VENTAS', 'Comparativo de Ventas Mensual y Anual', '54', 'reporte_comparativo_ventas.php', 'noticias'
+);
+
+

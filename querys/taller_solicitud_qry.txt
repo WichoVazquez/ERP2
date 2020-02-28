@@ -1,0 +1,25 @@
+
+CREATE TABLE IF NOT EXISTS `detalle_taller_solicitud` (
+  `detalle_taller_solicitud_id` int(10) NOT NULL AUTO_INCREMENT,
+  `producto_id` int(10) NOT NULL,
+  `cantidad_solicitada` int(10) NOT NULL,
+  `observacion` varchar(120) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`detalle_taller_solicitud_id`)
+)
+
+CREATE TABLE IF NOT EXISTS `taller_solicitud` (
+  `taller_solicitud_id` int(10) NOT NULL AUTO_INCREMENT,
+  `taller_id` int(10) NOT NULL,
+  `fecha_creacion` date NOT NULL,
+  `usuario_id_solicitante` int(10) NOT NULL,
+  `almacen_id` int(10) NOT NULL,
+  `usuario_id_autorizador` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha_autorizacion` date DEFAULT NULL,
+  `motivo` varchar(150) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `pedido_id` int(10) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `folio` int(10) NOT NULL,
+  PRIMARY KEY (`taller_solicitud_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=1 ;
+

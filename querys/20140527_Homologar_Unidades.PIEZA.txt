@@ -1,0 +1,1 @@
+UPDATE `material` SET `id_unidad`= 2 WHERE `id_unidad`= 1

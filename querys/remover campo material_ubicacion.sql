@@ -1,0 +1,1 @@
+ALTER TABLE `material` DROP `material_ubicacion` ;

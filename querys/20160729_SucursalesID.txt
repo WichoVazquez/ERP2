@@ -1,0 +1,5 @@
+ALTER TABLE COTIZACION ADD `sucursal_id` BIGINT NULL ;
+
+INSERT INTO PANTALLA(`pantalla_id`, `no_menu_orden`, `pantalla_nombre`, `pantalla_descripcion`, `id_pantalla_padre`, `pantalla_url`, `nombre_imagen`) VALUES (NULL, '11', 'UNIDADES', 'Catalogo de Unidades', '8', 'unidad_busqueda.php', 'almacen'); 
+
+INSERT INTO PANTALLA(`pantalla_id`, `no_menu_orden`, `pantalla_nombre`, `pantalla_descripcion`, `id_pantalla_padre`, `pantalla_url`, `nombre_imagen`) VALUES (NULL, '11', 'PRESENTACIONES', 'Catalogo de Presentaciones', '8', 'presentacion_busqueda.php', 'almacen');

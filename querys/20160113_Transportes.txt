@@ -1,0 +1,4 @@
+ALTER TABLE `logistica_solicitudes` CHANGE `fecha_sol` `fecha_entrega` DATETIME NOT NULL;
+ALTER TABLE `logistica_solicitudes` CHANGE `id_pedido` `id_detalle_pedido` BIGINT(20) NOT NULL;
+ALTER TABLE `logistica_solicitudes` ADD `cantidad` FLOAT NOT NULL AFTER `id_detalle_pedido`;
+ALTER TABLE `logistica_solicitudes` ADD `destino` VARCHAR(200) NOT NULL AFTER `descripcion`;

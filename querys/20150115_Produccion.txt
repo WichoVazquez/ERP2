@@ -1,0 +1,1 @@
+ALTER TABLE `detalle_pedido` ADD `cantidad_surtida_produccion` DECIMAL NOT NULL AFTER `cantidad_surtida`;

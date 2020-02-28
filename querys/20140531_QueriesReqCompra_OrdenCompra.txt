@@ -1,0 +1,1 @@
+UPDATE `promex`.`pantalla` SET `pantalla_url` = 'req_busqueda_usuario_almacen.php' WHERE `pantalla`.`pantalla_id` =36;

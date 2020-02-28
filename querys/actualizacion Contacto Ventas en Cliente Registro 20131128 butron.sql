@@ -1,0 +1,1 @@
+ALTER TABLE `cliente` DROP `cliente_generales` ;

@@ -1,0 +1,1 @@
+ALTER TABLE  `detalle_pedido` ADD  `facturado` TINYINT( 4 ) NOT NULL DEFAULT  '0' COMMENT  '0=no facturado, 1 Facturado' AFTER `fecha_recoleccion` ;

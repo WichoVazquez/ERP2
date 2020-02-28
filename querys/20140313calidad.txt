@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS `calidad` (
+  `calidad_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `fecha_calidad` date NOT NULL,
+  `observaciones` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`calidad_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `detalle_calidad` (
+  `detalle_calidad_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `calidad_id` bigint(20) NOT NULL,
+  `detalle_pedido_id` bigint(20) NOT NULL,
+  `cantidad_calidad` int(10) NOT NULL,
+  `b1` tinyint(4) DEFAULT NULL,
+  `b2` tinyint(4) DEFAULT NULL,
+  `b3` tinyint(4) DEFAULT NULL,
+  `b4` tinyint(4) NOT NULL,
+  PRIMARY KEY (`detalle_calidad_id`),
+  KEY `calidad_id` (`calidad_id`,`detalle_pedido_id`),
+  KEY `detalle_pedido_id` (`detalle_pedido_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=1 ;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `detalle_calidad`
+--
+ALTER TABLE `detalle_calidad`
+  ADD CONSTRAINT `detalle_calidad_ibfk2` FOREIGN KEY (`detalle_pedido_id`) REFERENCES `detalle_pedido` (`detalle_pedido_id`),
+  ADD CONSTRAINT `detalle_calidad_ibfk1` FOREIGN KEY (`calidad_id`) REFERENCES `calidad` (`calidad_id`);

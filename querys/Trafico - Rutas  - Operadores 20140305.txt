@@ -1,0 +1,1 @@
+ALTER TABLE `ruta` ADD `operador` VARCHAR( 100 ) NOT NULL ;

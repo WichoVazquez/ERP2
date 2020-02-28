@@ -1,0 +1,9 @@
+8-mayo-2013 error: tabla "CLIENTES" debe llamarse "CLIENTE"
+14-mayo-2013 error: tabla CONTACTO_VENTAS, campo contacto_ventas_id tinyint? debe ser bigint
+14-mayo-2013 error: tabla CONTACTO_VENTAS, llave foranea cliente_id esta direccionada a CLIENTES y debe ser CLIENTE
+15-mayo-2013 observacion: tabla SUCURSAL debe llamarse MATRIZ_SUCURSAL (RENAME TABLE SUCURSAL TO MATRIZ_SUCURSAL)
+
+15-mayo-2013 observacion: tabla MATRIZ_SUCURSAL cambia contacto_ventas_id a un campo generales_id (alter table MATRIZ_SUCURSAL drop column contacto_ventas_id; alter table MATRIZ_SUCURSAL add column generales_id BIGINT NOT NULL after  domicilio_id;ALTER TABLE `MATRIZ_SUCURSAL` ADD FOREIGN KEY (generales_id) REFERENCES `GENERALES` (`generales_id`);)
+
+15-mayo-2013 observacion: tabla MATRIZ_SUCURSAL agregar un campo tipo_sucursal: alter table SUCURSAL add column tipo_establecimiento tinyint not null after sucursal_id; y agregar campo clave_nombre: alter table SUCURSAL add column clave_nombre varchar(100) not null after tipo_establecimiento;
+

@@ -1,0 +1,14 @@
+ALTER TABLE `pedido` CHANGE `contrato_id` `contrato_id` VARCHAR( 10 ) NULL DEFAULT NULL ;
+ALTER TABLE `partida` DROP FOREIGN KEY `partida_ibfk_1` ;
+ALTER TABLE `partida` CHANGE `contrato_id` `contrato_id` VARCHAR( 10 ) NOT NULL ;
+
+
+ALTER TABLE `contrato` CHANGE `contrato_id` `contrato_id` BIGINT( 10 ) NOT NULL ;
+ALTER TABLE `contrato` CHANGE `contrato_id` `contrato_id` VARCHAR( 10 ) NOT NULL ;
+
+ALTER TABLE `contrato`
+  DROP PRIMARY KEY,
+   ADD PRIMARY KEY(
+     `cliente_id`);
+
+

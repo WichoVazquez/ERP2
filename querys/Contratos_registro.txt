@@ -1,0 +1,5 @@
+ALTER TABLE `contrato`
+  DROP PRIMARY KEY,
+   ADD PRIMARY KEY(
+     `contrato_id`,
+     `cliente_id`);

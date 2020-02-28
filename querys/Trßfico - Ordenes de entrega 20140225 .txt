@@ -1,0 +1,32 @@
+ALTER TABLE `ruta_detalle` CHANGE `ruta_detale_estatus` `ruta_detalle_estatus` TINYINT( 1 ) NOT NULL DEFAULT '0' COMMENT '0: Creada; 1_Terminada';
+
+
+
+DROP PROCEDURE `detalle_entrega`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `detalle_entrega`(IN `id_ruta_detalle` INT, IN `cantidad_enrutada` INT, IN `cantidad_entregada` INT, IN `observaciones_detalle` VARCHAR(50)) NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER BEGIN
+DECLARE id_pedido int;
+DECLARE cantidad_cotizacion INT;
+DECLARE cantidad_total_entregada INT;
+
+update detalle_pedido as dp
+inner join ruta_detalle as dr on dp.detalle_pedido_id= dr.PedidoDetalle_id
+inner join detalle_cotizacion as dc on dp.detalle_cotizacion_id = dc.detalle_cotizacion_id
+set dr.cantidadEntregada=cantidad_entregada,
+dp.cantidad_entregada=dp.cantidad_entregada+cantidad_entregada,
+dp.cantidad_enrutada = dp.cantidad_enrutada-(cantidad_enrutada-cantidad_entregada),
+dr.observaciones =observaciones_detalle,
+dp.detalle_pedido_status = 4
+where dr.detalle_ruta_id=id_ruta_detalle;
+
+select @id_pedido :=dp.pedido_id
+, @cantidad_cotizacion := SUM( dc.cantidad )
+, @cantidad_total_entregada := SUM( dp[...]
+
+
+
+
+
+ALTER TABLE `ruta_detalle` CHANGE `cantidadEnrutada` `cantidadEnrutada` INT( 11 ) NOT NULL DEFAULT '0';
+
+
+ALTER TABLE `ruta_detalle` CHANGE `cantidadEntregada` `cantidadEntregada` INT( 11 ) NULL DEFAULT '0';

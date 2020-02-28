@@ -1,0 +1,57 @@
+ALTER TABLE  `pantalla` ADD  `no_menu` INT NOT NULL AFTER  `pantalla_id` ;
+ALTER TABLE  `pantalla` ADD  `clv_pantalla` INT NOT NULL AFTER  `pantalla_url` ;
+ALTER TABLE  `perfil_pantalla` ADD  `alta` NULL;
+ALTER TABLE  `perfil_pantalla` ADD  `baja` NULL;
+ALTER TABLE  `perfil_pantalla` ADD  `consulta`  NULL;
+ALTER TABLE  `perfil_pantalla` ADD  `modificacion`  NULL;
+ALTER TABLE  `pantalla` ADD UNIQUE (`clv_pantalla`);
+ALTER TABLE  `perfil` ADD UNIQUE (`perfil_nombre`);
+
+INSERT INTO `pantalla` (`pantalla_id`, `no_menu`, `pantalla_nombre`, `pantalla_descripcion`, `pantalla_padre`, `pantalla_url`, `clv_pantalla`) 
+VALUES
+(2, 1, 'Catalogos', 'Menu de catalogos', '', 'CATALOGOS.php', 'menu_catalogos'),
+
+(3, 1, 'Proveedor', 'Modulo Proveedor', 'Catalogos', 'proveedor_busqueda.php', 'proveedor_busqueda'),
+(4, 1, 'Cliente', 'Modulo clientes', 'Catalogos', 'cliente_busqueda.php', 'cliente_busqueda'),
+
+(5, 2, 'Ventas', 'Menu de Ventas', '', 'VENTAS.php', 'menu_ventas'),
+
+(6, 3, 'Compras', 'Menu de Compras', '', 'COMPRAS.php', 'menu_compras'),
+
+(7, 4, 'Facturacion', 'Menu de Facturacion', '', 'FACTURACION.php', 'menu_facturacion'),
+
+(8, 5, 'Almacen', 'Menu de Almacen', '', 'ALMACEN.php', 'menu_almacen'),
+
+(9, 6, 'Taller', 'Menu de Taller', '', 'TALLER.php', 'menu_taller'),
+
+(10, 7, 'Calidad', 'Menu de Calidad', '', 'CALIDAD.php', 'menu_calidad'),
+
+(11, 8, 'Trafico', 'Menu de Trafico', '', 'TRAFICO.php', 'menu_trafico'),
+
+(12, 1, 'Almacen', 'Catalogo de Almacen', 'Catalogos', 'almacen_busqueda.php', 'almacen_busqueda'),
+
+(13, 1, 'Material', 'Catalogo de Material', 'Catalogos', 'material_busqueda.php', 'material_busqueda'),
+
+(14, 1, 'Empresa', 'Catalogo de Empresa', 'Catalogos', 'empresa_busqueda.php', 'empresa_busqueda'),
+
+(15, 1, 'Matriz', 'Catalogo de Matriz', 'Catalogos', 'matriz_busqueda.php', 'matriz_busqueda'),
+
+(16, 1, 'Precio', 'Catalogo de Precio', 'Catalogos', 'precio_busqueda.php', 'precio_busqueda'),
+
+(17, 1, 'Moneda', 'Catalogo de Moneda', 'Catalogos', 'moneda_busqueda.php', 'moneda_busqueda'),
+
+(18, 1, 'Transporte', 'Catalogo de Transporte', 'Catalogos', 'transporte_busqueda.php', 'transporte_busqueda'),
+
+(19, 1, 'Usuario', 'Catalogo de Usuario', 'Catalogos', 'usuario_busqueda.php', 'usuario_busqueda'),
+
+(20, 1, 'Perfiles', 'Catalogo de Perfiles', 'Catalogos', 'perfiles_busqueda.php', 'perfiles_busqueda'),
+
+(21, 1, 'Pantalla', 'Catalogo de Pantalla', 'Catalogos', 'pantalla_busqueda.php', 'pantalla_busqueda'),
+
+(22, 2, 'Prospectar', 'Modulo Prospectar', 'Ventas', 'prospecto_busqueda.php', 'prospecto_busqueda'),
+
+(23, 2, 'Cotizaciones', 'Modulo Cotizaciones', 'Ventas', 'cotizacion_busqueda_usuario.php', 'cotizacion_busqueda'),
+
+(24, 2, 'Pedidos', 'Modulo Pedidos', 'Ventas', 'pedidos_busqueda.php', 'pedidos_busqueda'),
+
+(25, 2, 'Reportes', 'Modulo Reportes', 'Ventas', 'reportes_ventas.php', 'reportes_ventas');

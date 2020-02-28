@@ -1,0 +1,2 @@
+UPDATE `mogel`.`pantalla` SET `no_menu_orden` = '4' WHERE `pantalla`.`pantalla_id` = 7;
+UPDATE `mogel`.`pantalla` SET `pantalla_nombre` = 'FACTURAR PEDIDOS' WHERE `pantalla`.`pantalla_id` = 35;

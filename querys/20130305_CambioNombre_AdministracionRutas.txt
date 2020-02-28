@@ -1,0 +1,3 @@
+UPDATE  `promex`.`pantalla` SET  `pantalla_nombre` =  'ASIGNACIÓN DE RUTAS' WHERE  `pantalla`.`pantalla_id` =48;
+
+UPDATE  `promex`.`pantalla` SET  `pantalla_descripcion` =  'asignación de rutas' WHERE  `pantalla`.`pantalla_id` =48;

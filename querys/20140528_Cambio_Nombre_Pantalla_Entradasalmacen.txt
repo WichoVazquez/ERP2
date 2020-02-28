@@ -1,0 +1,8 @@
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'REQUISICIÓN DE COMPRAS' WHERE `pantalla`.`pantalla_id` =36;
+
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'VALES DE CONSUMO DE TALLER' WHERE `pantalla`.`pantalla_id` =53;
+
+
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'SOLICITUDES DE MATERIAL DE TALLER' WHERE `pantalla`.`pantalla_id` =52;
+
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'BITÁCORA DE RECOLECCIÓN' WHERE `pantalla`.`pantalla_id` =32;

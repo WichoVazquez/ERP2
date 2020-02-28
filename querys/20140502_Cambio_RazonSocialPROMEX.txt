@@ -1,0 +1,1 @@
+UPDATE  `promex`.`empresa` SET  `empresa_razonsocial` =  'PROMEX EXTINTORES S.A. DE C.V.' WHERE  `empresa`.`empresa_id` =3;

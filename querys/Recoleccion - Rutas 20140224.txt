@@ -1,0 +1,10 @@
+ALTER TABLE `detalle_pedido` ADD `cantidad_recoger` BIGINT NULL ,
+ADD `cantidad_prestamo` BIGINT NULL ,
+ADD `fecha_recoleccion` DATE NULL ;
+
+
+
+ALTER TABLE `ruta_detalle` ADD `ruta_detale_estatus` TINYINT( 1 ) NOT NULL DEFAULT '0' COMMENT '0: Creada; 1_Terminada';
+
+
+ALTER TABLE `ruta` ADD `fecha_creacion` DATETIME NOT NULL ;

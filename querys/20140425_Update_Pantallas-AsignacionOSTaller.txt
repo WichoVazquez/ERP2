@@ -1,0 +1,3 @@
+UPDATE `promex`.`pantalla` SET `pantalla_url` = 'almacen_orden_salida_Autorizacion.php' WHERE `pantalla`.`pantalla_id` =56;
+
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'ASIGNACIÓN DE ORDENES DE SALIDA' WHERE `pantalla`.`pantalla_id` =56;

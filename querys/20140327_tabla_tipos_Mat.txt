@@ -1,0 +1,35 @@
+
+--
+-- Estructura de tabla para la tabla `material_tipo`
+--
+
+CREATE TABLE IF NOT EXISTS `material_tipo` (
+  `material_tipo` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(10) COLLATE utf8_spanish_ci NOT NULL COMMENT 'Abreviatura',
+  `descripcion` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `categoria` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`material_tipo`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Categorias de los materiales' AUTO_INCREMENT=17 ;
+
+--
+-- Volcado de datos para la tabla `material_tipo`
+--
+
+INSERT INTO `material_tipo` (`material_tipo`, `nombre`, `descripcion`, `categoria`) VALUES
+(1, 'MISC', 'Miscelaneos', 'Materiales/Equipo'),
+(2, 'MAT', 'Materiales', 'Materiales/Equipo'),
+(3, 'NVO', 'Equipo Nuevo', 'Materiales/Equipo'),
+(4, 'REC', 'Recarga de Equipo', 'Materiales/Equipo'),
+(5, 'SEÑ', 'Señalizaciones', 'Materiales/Equipo'),
+(6, 'E.BOM', 'Equipo Bomberos', 'Materiales/Equipo'),
+(7, 'E.INC', 'Equipo VS Incendio', 'Materiales/Equipo'),
+(8, 'CYG', 'Cubiertas y Gabinetes', 'Materiales/Equipo'),
+(9, 'SEGP', 'Seguridad Personal', 'Materiales/Equipo'),
+(10, 'PROTC', 'Protección Civil', 'Materiales/Equipo'),
+(11, 'CAP', 'Capacitación', 'Materiales/Equipo'),
+(12, 'M.EQ', 'Mtto. Equipo', 'Materiales/Equipo'),
+(13, 'S-INC', 'Sistema VS Incendio', 'Servicios'),
+(14, 'M.S-INC', 'Mtto. Sistema VS Incendio', 'Servicios'),
+(15, 'R-HID', 'Red de Hidrantes', 'Servicios'),
+(16, 'M.R-HID', 'Mtto. Red de Hidrantes', 'Servicios');
+

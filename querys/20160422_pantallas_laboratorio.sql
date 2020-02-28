@@ -1,0 +1,1 @@
+INSERT INTO `mogel`.`pantalla` (`pantalla_id`, `no_menu_orden`, `pantalla_nombre`, `pantalla_descripcion`, `id_pantalla_padre`, `pantalla_url`, `nombre_imagen`) VALUES (NULL, '2', 'SOLICITUDES DE LABORATORIO', 'Módulo de solicitudes de laboratorio', '10', 'calidad_solicitudes_busqueda.php', 'proveedor');

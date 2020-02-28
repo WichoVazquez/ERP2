@@ -1,0 +1,2 @@
+ALTER TABLE `req_compra` ADD `proyecto` VARCHAR(200) NOT NULL , ADD `descripcion` VARCHAR(200) NOT NULL , ADD `lugar_entrega` VARCHAR(200) NOT NULL ;
+

@@ -1,0 +1,5 @@
+ALTER TABLE `cliente` CHANGE `status` `status` TINYINT( 1 ) NOT NULL DEFAULT '0';
+ALTER TABLE `prospecto` CHANGE `id_cliente` `cliente_id` BIGINT( 20 ) NULL DEFAULT NULL ;
+ALTER TABLE `prospecto` CHANGE `cliente_id` `cliente_id` VARCHAR( 10 ) NOT NULL ;
+
+

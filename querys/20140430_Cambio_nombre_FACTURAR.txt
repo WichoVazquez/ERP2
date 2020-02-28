@@ -1,0 +1,1 @@
+UPDATE  `promex`.`pantalla` SET  `pantalla_nombre` =  'FACTURAR ORDENES DE SALIDA' WHERE  `pantalla`.`pantalla_id` =35;

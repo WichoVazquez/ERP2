@@ -1,0 +1,4 @@
+ALTER TABLE `pedido` CHANGE `sucursal_id` `sucursal_id` BIGINT( 20 ) NULL ;
+ALTER TABLE `detalle_pedido` ADD `producto_id` BIGINT( 20 ) NOT NULL ;
+ALTER TABLE `detalle_pedido` ADD `precio_venta` DECIMAL( 10, 2 ) NOT NULL ;
+ALTER TABLE `detalle_pedido` ADD `multiplo` DECIMAL( 10, 2 ) NOT NULL ;

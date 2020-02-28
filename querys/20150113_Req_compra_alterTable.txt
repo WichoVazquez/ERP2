@@ -1,0 +1,1 @@
+ALTER TABLE `req_compra` ADD `proveedor_id` BIGINT NOT NULL , ADD `empresa_id` BIGINT NOT NULL ;

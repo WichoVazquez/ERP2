@@ -1,0 +1,4 @@
+ALTER TABLE `pedido` ADD `usuario_id` VARCHAR( 10 ) NOT NULL ;
+ALTER TABLE `detalle_pedido` ADD `cantidad` INT( 11 ) NOT NULL ;
+ALTER TABLE `detalle_pedido` ADD `pedido_tipo` TINYINT( 2 ) NOT NULL 
+ALTER TABLE `detalle_cotizacion` CHANGE `cotizacion_tipo` `cotizacion_tipo` TINYINT( 2 ) NOT NULL DEFAULT '0' COMMENT 'producto=0; servicio=1;';

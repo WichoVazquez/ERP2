@@ -1,0 +1,41 @@
+alter table detalle_pedido
+add column `cantidad_enrutada` int(11) NOT NULL DEFAULT '0';
+
+
+alter table ruta_detalle
+add column
+`observaciones` varchar(50) DEFAULT NULL;
+
+delimiter //
+CREATE  PROCEDURE `detalle_entrega`(IN `id_ruta_detalle` INT, IN `cantidad_enrutada` INT, IN `cantidad_entregada` INT, IN `observaciones_detalle` VARCHAR(50))
+    NO SQL
+BEGIN
+DECLARE id_pedido int;
+DECLARE cantidad_cotizacion INT;
+DECLARE cantidad_total_entregada INT;
+
+update detalle_pedido as dp
+inner join ruta_detalle as dr on dp.detalle_pedido_id= dr.PedidoDetalle_id
+inner join detalle_cotizacion as dc on dp.detalle_cotizacion_id = dc.detalle_cotizacion_id
+set dr.cantidadEntregada=cantidad_entregada, 
+dp.cantidad_entregada=dp.cantidad_entregada+cantidad_entregada,
+dp.cantidad_enrutada = dp.cantidad_enrutada-(cantidad_enrutada-cantidad_entregada),
+dr.observaciones =observaciones_detalle
+where dr.detalle_ruta_id=id_ruta_detalle;
+
+select @id_pedido :=dp.pedido_id
+, @cantidad_cotizacion := SUM( dc.cantidad )
+, @cantidad_total_entregada := SUM( dp.cantidad_entregada ) 
+FROM detalle_pedido AS dp
+INNER JOIN ruta_detalle AS dr ON dp.detalle_pedido_id = dr.PedidoDetalle_id
+INNER JOIN detalle_cotizacion AS dc ON dp.detalle_cotizacion_id = dc.detalle_cotizacion_id
+WHERE dr.detalle_ruta_id =id_ruta_detalle;
+
+if (@cantidad_total_entregada < @cantidad_cotizacion) then
+	update pedido set pedido_estado=0 where pedido_id=@id_pedido;
+else
+       	update pedido set pedido_estado=1 where pedido_id=@id_pedido;
+end if;
+END;
+//
+delimiter ;

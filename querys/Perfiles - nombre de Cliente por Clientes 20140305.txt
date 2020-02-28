@@ -1,0 +1,1 @@
+UPDATE `promex`.`pantalla` SET `pantalla_nombre` = 'CLIENTES' WHERE `pantalla`.`pantalla_id` =29;

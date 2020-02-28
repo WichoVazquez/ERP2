@@ -1,0 +1,1 @@
+INSERT INTO `mogel`.`parametros` (`parametro_id`, `parametro_var`, `parametro_1`, `parametro_2`, `descripcion`, `tipo`) VALUES (NULL, 'NOTA_SALIDA', '1', '0', 'FOLIO DE NOTAS DE SALIDA', 'NOTAS')

@@ -1,0 +1,1 @@
+ALTER TABLE `cotizacion` DROP `producto-servicio` ;

@@ -1,0 +1,1 @@
+UPDATE `mogel`.`pantalla` SET `pantalla_nombre` = 'ENTRADA DE MATERIAL' WHERE `pantalla`.`pantalla_id` = 59;

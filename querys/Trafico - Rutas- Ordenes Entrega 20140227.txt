@@ -1,0 +1,3 @@
+ALTER TABLE `pedido` ADD `pedido_fecha_recoleccion` DATETIME NULL DEFAULT NULL ;
+
+ALTER TABLE `pedido` CHANGE `pedido_fecha_entrega` `pedido_fecha_entrega` DATETIME NULL DEFAULT NULL ;

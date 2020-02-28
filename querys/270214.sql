@@ -1,0 +1,1 @@
+ALTER TABLE  `detalle_taller_solicitud` ADD  `cantidad_surtida` INT( 10 ) NOT NULL DEFAULT  '0' AFTER  `cantidad_solicitada` ;

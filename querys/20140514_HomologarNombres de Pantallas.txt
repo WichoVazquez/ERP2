@@ -1,0 +1,44 @@
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de Cotizaciones' WHERE `pantalla`.`pantalla_id` =23;
+
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Pantalla general de clientes' WHERE `pantalla`.`pantalla_id` =29;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de Usuario' WHERE `pantalla`.`pantalla_id` =30;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de Ordenes de salida' WHERE `pantalla`.`pantalla_id` =31;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de ecoleccion de equipo' WHERE `pantalla`.`pantalla_id` =32;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de contratos de clientes' WHERE `pantalla`.`pantalla_id` =33;
+
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de Ordenes de compra de clientes' WHERE `pantalla`.`pantalla_id` =34;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de Facturacion de Ordenes de Salida' WHERE `pantalla`.`pantalla_id` =35;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Modulo de entradas al almacen' WHERE `pantalla`.`pantalla_id` =36;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Material sin stock' WHERE `pantalla`.`pantalla_id` =43;
+
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Consulta de inventario de almacen' WHERE `pantalla`.`pantalla_id` =37;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de Ordenes de salida de taller' WHERE `pantalla`.`pantalla_id` =44;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de solicitudes de material de taller' WHERE `pantalla`.`pantalla_id` =45;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de solicitud de vales de consumo' WHERE `pantalla`.`pantalla_id` =46;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de asignación de rutas' WHERE `pantalla`.`pantalla_id` =48;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de ordenes de salida de calidad' WHERE `pantalla`.`pantalla_id` =47;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de ordenes de entrega de logistca' WHERE `pantalla`.`pantalla_id` =49;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Catálogo de transportes' WHERE `pantalla`.`pantalla_id` =50;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de ordenes de salida de almacen' WHERE `pantalla`.`pantalla_id` =51;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de solicitudes de material de almacen' WHERE `pantalla`.`pantalla_id` =52;
+
+UPDATE `promex`.`pantalla` SET `pantalla_descripcion` = 'Módulo de vales de consumo almacen' WHERE `pantalla`.`pantalla_id` =53;

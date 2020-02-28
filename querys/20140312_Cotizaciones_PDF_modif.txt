@@ -1,0 +1,6 @@
+ALTER TABLE `cotizacion` ADD `cotizacion_vigencia` VARCHAR( 200 ) NOT NULL AFTER `cotizacion_condiciones_pago` ;
+
+ALTER TABLE `cotizacion` CHANGE `cotizacion_vigencia` `cotizacion_vigencia` VARCHAR( 200 ) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ;
+
+
+ALTER TABLE `cotizacion` CHANGE `cotizacion_condiciones_pago` `cotizacion_condiciones_pago` VARCHAR( 200 ) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ;
